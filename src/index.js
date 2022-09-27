@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import GlobalStyle from './assets/styles/GlobalStyle';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import * as serviceWorker from './serviceWorker';
 
 const Home = lazy(() => import('./pages/Home/index'));
 const Error = lazy(() => import('./components/Error/index'));
@@ -28,8 +27,6 @@ root.render(
     </Router>
   </React.StrictMode>
 );
-
-serviceWorker.register();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
