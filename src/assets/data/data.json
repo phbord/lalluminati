@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "title": "Politique & Eco n°357 avec Philippe Murer - Le suicide européen par le délire idéologique",
+      "chapo": "",
+      "desc": "Nous sommes en guerre ! Comme contre le covid, Emmanuel Macron nous refait le coup... Les sanctions contre la Russie, prises sans le consentement du Parlement, devaient mettre Moscou à genou mais par une sorte de justice immanente,",
+      "author": "",
+      "link": "https://tvl.fr/politique-eco-n0357-avec-philippe-murer-le-suicide-europeen-par-le-delire-ideologique",
+      "photo": "https://tvl.fr/upload/media/program/0001/21/thumb_20386_program_bigSlider.jpg",
+      "theme_category": "eco",
+      "media_type": "v",
+      "media_name": "TVL",
+      "date": "26/09/2022"
+    },
+    {
       "title": "L'ULTIME PLAN MONDIALISTE : GÉNOCIDE ET STÉRILISATION AVEC PIERRE-ANTOINE PLAQUEVENT !",
       "chapo": "",
       "desc": "",
@@ -76,6 +88,43 @@
       "date": ""
     },
     {
+      "title": "La France tend de plus en plus vers une société de surveillance à la chinoise !",
+      "chapo": "LA TABLE RONDE avec Yves-Marie Adeline et Emmanuel Lincot",
+      "desc": "",
+      "author": "",
+      "link": "https://www.youtube.com/watch?v=aKcAiYsuSII",
+      "photo": "https://i.ytimg.com/an_webp/aKcAiYsuSII/mqdefault_6s.webp?du=3000&sqp=CLzDzJkG&rs=AOn4CLDPkjHWmLHa_CbwvqQevzm6udpQow",
+      "theme_category": "hgp",
+      "media_type": "v",
+      "media_name": "Ligne Droite",
+      "date": ""
+    },
+    {
+      "title": "Youssef Hindi et Rachid Achachi sont sur Ondes de choc TV : Géopolitique de l’Apocalypse",
+      "chapo": "",
+      "desc": "Guerre eschatologique, apocalypse, messianisme, antéchrist, des termes mystérieux, comme tout droit sortis d’un passé lointain, un passé révolu et sombre… un passé aux antipodes de la modernité et de la mondialisation heureuse”",
+      "author": "",
+      "link": "https://strategika.fr/2022/09/25/youssef-hindi-et-rachid-achachi-sont-sur-ondes-de-choc-tv-geopolitique-de-lapocalypse/",
+      "photo": "https://strategika.fr/wp-content/uploads/2022/09/image.jpg",
+      "theme_category": "hgp",
+      "media_type": "v",
+      "media_name": "Strategika",
+      "date": "25 septembre 2022",
+      "important": true
+    },
+    {
+      "title": "Projet d’euro numérique : En choisissant Amazon comme partenaire, la Banque Centrale Européenne va à l’encontre de notre souveraineté numérique",
+      "chapo": "",
+      "desc": "Alors que l’euro numérique est encore dans sa phase d’investigation, la Banque Centrale Européenne a annoncé le 16 septembre 2022 faire appel à Amazon, au côté de quatre autres acteurs, pour développer les prototypes des interfaces utilisateurs.",
+      "author": "Virginie Joron",
+      "link": "https://strategika.fr/2022/09/27/projet-deuro-numerique-en-choisissant-amazon-comme-partenaire-la-banque-centrale-europeenne-va-a-lencontre-de-notre-souverainete-numerique/",
+      "photo": "https://strategika.fr/wp-content/uploads/2022/09/raw.webp",
+      "theme_category": "eco",
+      "media_type": "p",
+      "media_name": "Strategika",
+      "date": "22 septembre 2022"
+    },
+    {
       "title": "La stratégie occidentale pour démanteler la Fédération de Russie",
       "chapo": "",
       "desc": "Renouant avec les stratégie de l’Allemagne durant la Première Guerre mondiale et des États-Unis et des nationalistes intégraux ukrainiens durant la Guerre froide, les Occidentaux viennent de créer un Forum des peuples libres de Russie.",
@@ -109,7 +158,8 @@
       "theme_category": "gp",
       "media_type": "p",
       "media_name": "Volaire.net",
-      "date": "5 MARS 2022"
+      "date": "5 MARS 2022",
+      "important": true
     },
     {
       "title": "",
