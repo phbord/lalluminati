@@ -2,9 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const CustomButton = styled.button`
-    position: fixed;
-    bottom: 1.25rem;
-    right: .5rem;
     width: 3.5rem;
     height: 3.5rem;
     display: flex;

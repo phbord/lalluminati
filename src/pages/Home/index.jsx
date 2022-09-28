@@ -80,9 +80,11 @@ const Home = () => {
         {
           data?.articles?.filter(article => (article.title && article.link))
             .map((article, index) => (
-              <ArticleItem key={index} className='col-xs-12 col-sm-6 col-md-3'>
+              <ArticleItem key={index}
+                           className='col-xs-12 col-sm-6 col-md-3'>
                 <ArticleLink onClick={() => openInNewTab(article.link)}>
-                  <Article data={article} key={index} />
+                  <Article data={article}
+                           key={index}/>
                 </ArticleLink>
               </ArticleItem>
             )

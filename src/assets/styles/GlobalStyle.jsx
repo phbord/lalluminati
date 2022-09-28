@@ -47,6 +47,7 @@ const StyledGlobalStyle = createGlobalStyle`
       flex-direction: column;
     }
 
+    .prev-scroll-button,
     .top-scroll-button {
       background-color: var(--articleColor);
       color: var(--dark);
@@ -54,6 +55,12 @@ const StyledGlobalStyle = createGlobalStyle`
       &:hover {
         background-color: var(--yellow);
       }
+    }
+
+    .top-scroll-button {
+      position: fixed;
+      bottom: 1.25rem;
+      right: .5rem;
     }
 `;
 

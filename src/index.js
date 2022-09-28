@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import GlobalStyle from './assets/styles/GlobalStyle';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Loading from './components/Loading'
 
 const Home = lazy(() => import('./pages/Home/index'));
 const Error = lazy(() => import('./components/Error/index'));
@@ -14,9 +15,9 @@ root.render(
   <React.StrictMode>
     <Router>
       <GlobalStyle/>
-      <Header/>
+      <Header />
       <div className='container'>
-        <Suspense fallback={<div>Chargement...</div>}>
+        <Suspense fallback={<Loading/>}>
           <Routes>
             <Route path='/' element={<Home/>} exact/>
             <Route path='*' element={<Error/>}/>
