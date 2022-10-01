@@ -93,11 +93,11 @@ const Article = (data) => {
         { text ? <Description>{text}</Description> : '' }
         <OtherInfos>
             { articleData.author ? <OtherSubInfos>{articleData.author}</OtherSubInfos> : '' }
-            { articleData.author && articleData.media_name ? <OtherSubInfos> - </OtherSubInfos> : '' }
+            { articleData.author && articleData.media_name ? <OtherSubInfos> • </OtherSubInfos> : '' }
             { articleData.media_name ? <OtherSubInfos>{articleData.media_name}</OtherSubInfos> : '' }
-            { articleData.media_name && articleData.date ? <OtherSubInfos> - </OtherSubInfos> : '' }
+            { articleData.media_name && articleData.date ? <OtherSubInfos> • </OtherSubInfos> : '' }
             { articleData.date ? <OtherSubInfos>{articleData.date}</OtherSubInfos> : '' }
-            { articleData.date && articleData.time ? <OtherSubInfos> - </OtherSubInfos> : '' }
+            { articleData.date && articleData.time ? <OtherSubInfos> • </OtherSubInfos> : '' }
             { articleData.time ? <OtherSubInfos>{articleData.time}</OtherSubInfos> : '' }
         </OtherInfos>
     </>;
