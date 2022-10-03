@@ -61,6 +61,7 @@ const ArticleLink = styled.button`
 
 const Home = () => {
   //const { data } = useJson(Data);
+  // see : https://extendsclass.com/jsonstorage/54b5ad0d13e0#apiDocumentation
   const { data, isLoading, error } = useFetch('https://json.extendsclass.com/bin/54b5ad0d13e0');
   const { showTopBtn } = useScrollToTop();
 
