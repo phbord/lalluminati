@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import noPhoto from './../../assets/images/no-img.jpg';
 import { useMediaCategories, useThemeCategories, useSubstring } from '../../utils/hooks';
 
 const ArticleContainer = styled.article`
@@ -34,7 +35,7 @@ const Article = (data) => {
         height: 12.5rem;
         margin: var(--articlePaddingLess) var(--articlePaddingLess) var(--articlePadding);
         padding: 0 var(--articlePadding);
-        background: transparent url(${articleData.photo}) no-repeat center;
+        background: transparent url(${articleData.photo ? articleData.photo : noPhoto}) no-repeat center;
         background-size: cover;
     `;
 
@@ -86,7 +87,7 @@ const Article = (data) => {
         : '';
 
     const article = <>
-        { articleData.photo ? <Photo className='article-photo'/> : '' }
+        <Photo className='article-photo'/>
         { IsUl }
         { articleData.title ? <H1>{articleData.title}</H1> : '' }
         { articleData.chapo ? <H2>{articleData.chapo}</H2> : '' }
