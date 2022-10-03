@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Data from './../../assets/data/data.json';
-import { useJson, useScrollToTop } from '../../utils/hooks';
+//import Data from './../../assets/data/data.json';
+import { useFetch, useScrollToTop } from '../../utils/hooks';
 import { goToTop } from "../../utils/functions";
 import TopArrowIcon from './../../assets/images/top-arrow.svg';
 import Article from '../../components/Article';
@@ -60,7 +60,8 @@ const ArticleLink = styled.button`
 `;
 
 const Home = () => {
-  const { data } = useJson(Data);
+  //const { data } = useJson(Data);
+  const { data, isLoading, error } = useFetch('https://json.extendsclass.com/bin/54b5ad0d13e0');
   const { showTopBtn } = useScrollToTop();
 
   const openInNewTab = url => {
