@@ -8,6 +8,7 @@ import rt from './../../assets/images/rt.jpeg';
 import str from './../../assets/images/strategika.png';
 import tvl from './../../assets/images/tvl.jpeg';
 import sr from './../../assets/images/sud-radio.png';
+import ntdtv from './../../assets/images/ntdtv.jpg';
 
 const Photo = (data) => {
     const PhotoContainer = styled.div`
@@ -58,6 +59,12 @@ function _filterPhoto(photo, mediaName) {
                 break;
             case 'Sud Radio'.toLowerCase():
                 photoUrl = sr;
+                break;
+            case 'NTD TV'.toLowerCase():
+                photoUrl = ntdtv;
+                break;
+            case 'NTDTV'.toLowerCase():
+                photoUrl = ntdtv;
                 break;
             default:
                 photoUrl = noPhoto;
