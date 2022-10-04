@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import noPhoto from './../../assets/images/no-img.jpg';
 import { useMediaCategories, useThemeCategories, useSubstring } from '../../utils/hooks';
+import Photo from './../Photo';
 
 const ArticleContainer = styled.article`
     margin: var(--articleMargin);
@@ -29,15 +30,6 @@ const Article = (data) => {
     const { mediaType } = useMediaCategories(articleData.media_type);
     const { themeType } = useThemeCategories(articleData.theme_category);
     const { text } = useSubstring(articleData.desc, 120);
-
-    const Photo = styled.div`
-        width: 100%;
-        height: 12.5rem;
-        margin: var(--articlePaddingLess) var(--articlePaddingLess) var(--articlePadding);
-        padding: 0 var(--articlePadding);
-        background: transparent url(${articleData.photo ? articleData.photo : noPhoto}) no-repeat center;
-        background-size: cover;
-    `;
 
     const Ul = styled.ul`
         padding: 0;
@@ -87,7 +79,7 @@ const Article = (data) => {
         : '';
 
     const article = <>
-        <Photo className='article-photo'/>
+        <Photo data={articleData}/>
         { IsUl }
         { articleData.title ? <H1>{articleData.title}</H1> : '' }
         { articleData.chapo ? <H2>{articleData.chapo}</H2> : '' }
