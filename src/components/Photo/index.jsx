@@ -15,7 +15,6 @@ const Photo = (data) => {
         height: 12.5rem;
         margin: var(--articlePaddingLess) var(--articlePaddingLess) var(--articlePadding);
         padding: 0 var(--articlePadding);
-        //background: transparent url(${data.data.photo ? data.data.photo : noPhoto}) no-repeat center;
         background: transparent url(${_filterPhoto(data.data.photo, data.data.media_name)}) no-repeat center;
         background-size: cover;
     `;
@@ -26,11 +25,9 @@ const Photo = (data) => {
 };
 
 function _filterPhoto(photo, mediaName) {
-    //const [photoUrl, setPhotoUrl] = useState([]);
     let photoUrl = '';
     
     if (photo) {
-        //setPhotoUrl(photo);
         photoUrl=photo;
     }
     else {
