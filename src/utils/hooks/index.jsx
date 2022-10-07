@@ -78,6 +78,12 @@ export function useThemeCategories(theme) {
             case 'sp':
                 setThemeType('Sciences-politiques');
                 break;
+            case 'spr':
+                setThemeType('Spiritualités');
+                break;
+            case 'en':
+                setThemeType('Energétique');
+                break;
             case 's':
                 setThemeType('Santé');
                 break;
