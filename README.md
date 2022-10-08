@@ -2,6 +2,29 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Media types
+
+- by default: Presse
+- p: Presse
+- v: Vidéo
+- a: Audio
+
+## Media categories
+
+- by default: Actualités
+- hgp: Histoire/géopolitique
+- gp: Géopolitique
+- h: Histoire
+- sp: Sciences-politiques 
+- spr: Spiritualités 
+- en: Energétique 
+- s: Santé
+- eco: Economie
+- env: Environnement
+- sf: Ufologie
+- c: Culture
+- soc: Sociétal
+
 ## Available Scripts
 
 In the project directory, you can run:

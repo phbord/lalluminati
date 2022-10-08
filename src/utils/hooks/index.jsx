@@ -63,9 +63,6 @@ export function useThemeCategories(theme) {
     useEffect(() => {
         if (!theme) return;
         switch (theme) {
-            case 'a':
-                setThemeType('Actualités');
-                break;
             case 'hgp':
                 setThemeType('Histoire/géopolitique');
                 break;
@@ -98,6 +95,9 @@ export function useThemeCategories(theme) {
                 break;
             case 'c':
                 setThemeType('Culture');
+                break;
+            case 'soc':
+                setThemeType('Sociétal');
                 break;
             default:
                 setThemeType('Actualités');
