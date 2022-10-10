@@ -10,6 +10,7 @@ import tvl from './../../assets/images/tvl.jpeg';
 import sr from './../../assets/images/sud-radio.png';
 import ntdtv from './../../assets/images/ntdtv.jpg';
 import meridienZero from './../../assets/images/meridien-zero.jpeg';
+import ri from './../../assets/images/ri.png';
 
 const Photo = (data) => {
     const PhotoContainer = styled.div`
@@ -66,6 +67,9 @@ function _filterPhoto(photo, mediaName) {
                 break;
             case 'Méridien Zéro'.toLowerCase():
                 photoUrl = meridienZero;
+                break;
+            case ''.toLowerCase():
+                photoUrl = ri;
                 break;
             default:
                 photoUrl = noPhoto;
