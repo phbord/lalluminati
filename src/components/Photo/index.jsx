@@ -11,6 +11,7 @@ import sr from './../../assets/images/sud-radio.png';
 import ntdtv from './../../assets/images/ntdtv.jpg';
 import meridienZero from './../../assets/images/meridien-zero.jpeg';
 import ri from './../../assets/images/ri.png';
+import klaTv from './../../assets/images/klatv.jpeg';
 
 const Photo = (data) => {
     const PhotoContainer = styled.div`
@@ -68,8 +69,11 @@ function _filterPhoto(photo, mediaName) {
             case 'Méridien Zéro'.toLowerCase():
                 photoUrl = meridienZero;
                 break;
-            case ''.toLowerCase():
+            case 'Réseau International'.toLowerCase():
                 photoUrl = ri;
+                break;
+            case 'Kla.tv'.toLowerCase():
+                photoUrl = klaTv;
                 break;
             default:
                 photoUrl = noPhoto;
