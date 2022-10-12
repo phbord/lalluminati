@@ -358,5 +358,204 @@
       "time": "",
       "important": true
     }
-  ]
+  ],
+  "celebrities": [
+    {
+      "firstname": "",
+      "lastname": "",
+      "desc": "",
+      "url": ""
+    },
+    {
+      "firstname": "Alain",
+      "lastname": "de Benoist",
+      "desc": "intellectuel, fondateur de la nouvelle droite et la revue Elément"
+    },
+    {
+      "firstname": "Michel",
+      "lastname": "Drac",
+      "desc": "analyste politique",
+      "url": "https://www.youtube.com/channel/UCUToCUpK5ZAH6S6ZXktfWEA/videos"
+    },
+    {
+      "firstname": "Philippe",
+      "lastname": "Ploncard d'Assac",
+      "desc": "essayiste, fondateur des Cercles Nationalistes Français",
+      "url": "https://nationalisme-francais.com/"
+    },
+    {
+      "firstname": "Pierre",
+      "lastname": "Jovanovic",
+      "desc": "journaliste spécialiste du système monétaire",
+      "url": "https://www.jovanovic.com/"
+    },
+    {
+      "firstname": "Françis",
+      "lastname": "Cousin",
+      "desc": "philo-historien",
+      "url": "http://guerredeclasse.fr/"
+    },
+    {
+      "firstname": "Alexandre",
+      "lastname": "Douguine",
+      "desc": "philosophe, fondateur du mouvement néo-eurasiste"
+    },
+    {
+      "firstname": "Philippe",
+      "lastname": "Randa",
+      "desc": "écrivain, éditeur",
+      "url": "https://eurolibertes.com/"
+    },
+    {
+      "firstname": "Pierre-Yves",
+      "lastname": "Rougeyron",
+      "desc": "essayiste, politologue",
+      "url": "https://cerclearistote.fr/"
+    },
+    {
+      "firstname": "François",
+      "lastname": "Asselineau",
+      "desc": "président de l'UPR",
+      "url": "https://www.upr.fr/"
+    },
+    {
+      "firstname": "Hervé",
+      "lastname": "Juvin",
+      "desc": "spécialiste de l'écologie"
+    },
+    {
+      "firstname": "Piero",
+      "lastname": "San Giorgio",
+      "desc": "essayiste, suvivaliste",
+      "url": "https://www.piero.com/"
+    },
+    {
+      "firstname": "Etienne",
+      "lastname": "Chouard",
+      "desc": "intellectuel, gilet jaune",
+      "url": "https://www.chouard.org/"
+    },
+    {
+      "firstname": "Pierre",
+      "lastname": "Hillard",
+      "desc": "historien, géopolitologue, spécialiste du mondialisme",
+      "url": "https://www.voltairenet.org/auteur62.html?lang=fr"
+    },
+    {
+      "firstname": "Youssef",
+      "lastname": "Hindi",
+      "desc": "historien, géopolitologue, spécialiste du mondialisme",
+      "url": "https://youssefhindi.wordpress.com/"
+    },
+    {
+      "firstname": "Bernard",
+      "lastname": "Lugan",
+      "desc": "historien, géopolitologue, spécialiste de l'Afrique",
+      "url": "http://bernardlugan.blogspot.com/"
+    },
+    {
+      "firstname": "Pierre-Antoine",
+      "lastname": "Plaquevent",
+      "desc": "spécialiste de l'ingéniérie sociale",
+      "url": "http://www.pierreantoineplaquevent.fr/"
+    },
+    {
+      "firstname": "Lucien",
+      "lastname": "Cerise",
+      "desc": "spécialiste de l'ingéniérie sociale",
+      "url": "http://strategika.fr/"
+    },
+    {
+      "firstname": "Robert",
+      "lastname": "Steuckers",
+      "desc": "intellectuel néo-eurasiste"
+    },
+    {
+      "firstname": "Jean",
+      "lastname": "Parvulesco",
+      "desc": "intellectuel néo-eurasiste"
+    },
+    {
+      "firstname": "Valérie",
+      "lastname": "Bugault",
+      "desc": "constitutionnaliste, géopolitologue",
+      "url": "https://valeriebugault.fr/"
+    },
+    {
+      "firstname": "Xavier",
+      "lastname": "Moreau",
+      "desc": "historien, géopolitologue sur le monde russe",
+      "url": "https://stratpol.com/"
+    },
+    {
+      "firstname": "Jean",
+      "lastname": "Haudry",
+      "desc": "indo-européaniste"
+    },
+    {
+      "firstname": "Georges",
+      "lastname": "Dumézil",
+      "desc": "indo-européaniste"
+    },
+    {
+      "firstname": "Jacques",
+      "lastname": "Baud",
+      "desc": "colonel suisse, géopolitologue"
+    },
+    {
+      "firstname": "Olivier",
+      "lastname": "Delamarche",
+      "desc": "économiste, co-fondateur de 'les éconoclastes'",
+      "url": "http://leseconoclastes.fr/"
+    },
+    {
+      "firstname": "Pierre",
+      "lastname": "Béchade",
+      "desc": "économiste, co-fondateur de 'les éconoclastes'",
+      "url": "http://leseconoclastes.fr/"
+    },
+    {
+      "firstname": "Jacques",
+      "lastname": "Sapir",
+      "desc": "économiste",
+      "url": "https://frontpopulaire.fr/auteurs/jacques-sapir_au25747"
+    },
+    {
+      "firstname": "André",
+      "lastname": "Gandillon",
+      "desc": "rédacteur en chef de la revue 'Militant'",
+      "url": "https://www.revue-militant.fr/"
+    },
+    {
+      "firstname": "Philippe",
+      "lastname": "Herlin",
+      "desc": "économiste",
+      "url": "https://philippeherlin.blogspot.com/"
+    },
+    {
+      "firstname": "Philippe",
+      "lastname": "Guillemant",
+      "desc": "physicien, chercheur",
+      "url": "http://www.guillemant.net/"
+    },
+    {
+      "firstname": "Jean-Pierre",
+      "lastname": "Petit",
+      "desc": "physicien, chercheur, spécialiste d’intelligence artificielle",
+      "url": "https://www.jp-petit.org/"
+    },
+    {
+      "firstname": "Philippe",
+      "lastname": "Fabry",
+      "desc": "juriste, géopolitologue",
+      "url": "https://www.historionomie.net/"
+    },
+    {
+      "firstname": "Philippe",
+      "lastname": "Murer",
+      "desc": "économiste",
+      "url": "http://leblogdephilippemurer.com/"
+    }
+  ],
+  "medias": []
 }

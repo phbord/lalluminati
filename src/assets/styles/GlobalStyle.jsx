@@ -62,6 +62,10 @@ const StyledGlobalStyle = createGlobalStyle`
       bottom: 1.25rem;
       right: .5rem;
     }
+
+    .right-panel {
+      right: 0!important;
+    }
 `;
 
 function GlobalStyle() {

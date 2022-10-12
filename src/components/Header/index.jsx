@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { isSlide } from '../../utils/functions/index';
 import Logo from '../../assets/images/logo.png';
+import Menu from '../../assets/images/menu.svg';
+import RightPanel from '../RightPanel';
 
 const HeaderContainer = styled.header`
   position: fixed;
@@ -10,7 +13,8 @@ const HeaderContainer = styled.header`
   z-index: 1000;
   padding: var(--defaultGutterSizeY) var(--defaultGutterSizeX);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: var(--yellowStronger) solid 1px;
   background-color: var(--dark);
 `;
@@ -48,31 +52,54 @@ const HeaderSubTitle = styled.h2`
 
 const HeaderLogo = styled.img`
   height: 4.5rem;
-  margin-left: .75rem;
+  margin-right: .75rem;
   padding: .125rem;
   display: block;
   border-radius: 50%;
   background-color: var(--light);
 `;
 
+const MenuButton = styled.button`
+  width: 4.75rem;
+  height: 4.75rem;
+  padding: 0.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 50%;
+  background-color: var(--light);
+  cursor: pointer;
+`;
+
+const MenuIcon = styled.img`
+`;
+
 const Header = props => {
   const title = 'L\'alluminati';
   const subTitle = 'Revue de presse libre';
+  const [isSlideClass, setIsSlideClass] = useState(false);
 
   return (
-    <HeaderContainer>
-      <HeaderTitleLink to="/">
-        <HeaderTitles>
-          <HeaderTitle>
-            {title}
-          </HeaderTitle>
-          <HeaderSubTitle>
-            {subTitle}
+    <>
+      <HeaderContainer>
+        <HeaderTitleLink to="/" onClick={() => isSlide(isSlideClass, setIsSlideClass)}>
+          <HeaderLogo src={Logo} alt={title}/>
+          <HeaderTitles>
+            <HeaderTitle>
+              {title}
+            </HeaderTitle>
+            <HeaderSubTitle>
+              {subTitle}
             </HeaderSubTitle>
           </HeaderTitles>
-        <HeaderLogo src={Logo} alt={title}/>
-      </HeaderTitleLink>
-    </HeaderContainer>
+        </HeaderTitleLink>
+        <MenuButton onClick={() => isSlide(isSlideClass, setIsSlideClass)}>
+          <MenuIcon src={Menu} alt={'Menu'}/>
+        </MenuButton>
+      </HeaderContainer>
+      <RightPanel isSlideClass={isSlideClass}/>
+    </>
   );
 };
 

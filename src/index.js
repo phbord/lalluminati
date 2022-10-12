@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Loading from './components/Loading'
 
 const Home = lazy(() => import('./pages/Home/index'));
+const Celebrities = lazy(() => import('./pages/Celebrities/index'));
 const Error = lazy(() => import('./components/Error/index'));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,6 +21,7 @@ root.render(
         <Suspense fallback={<Loading/>}>
           <Routes>
             <Route path='/' element={<Home/>} exact/>
+            <Route path='/celebrities' element={<Celebrities/>}/>
             <Route path='*' element={<Error/>}/>
           </Routes>
         </Suspense>

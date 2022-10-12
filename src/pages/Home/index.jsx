@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Data from './../../assets/data/data.json';
 import { useJson, useScrollToTop } from '../../utils/hooks';
+import { openInNewTab } from '../../utils/functions/index';
 import { goToTop } from "../../utils/functions";
 import TopArrowIcon from './../../assets/images/top-arrow.svg';
 import Article from '../../components/Article';
@@ -62,10 +63,6 @@ const ArticleLink = styled.button`
 const Home = () => {
   const { data } = useJson(Data);
   const { showTopBtn } = useScrollToTop();
-
-  const openInNewTab = url => {
-    window.open(url, '_blank', 'noopener,noreferrer');
-  };
 
   const topScrollButtonData = {
     text: "Haut de page",
