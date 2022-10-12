@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Data from './../../assets/data/data.json';
 import { useJson } from '../../utils/hooks';
@@ -37,6 +37,7 @@ const Celebrities = () => {
       <CelebritiesList className='row'>
         {
           data?.celebrities?.filter(celebrity => (celebrity.firstname && celebrity.lastname))
+            .sort((a, b) => a.lastname.localeCompare(b.lastname))
             .map((celebrity, index) => (
               <CelebritiesItem key={index} className='col-xs-12 col-sm-6 col-md-3 col-lg-2'>
                 <Celebrity data={celebrity}/>

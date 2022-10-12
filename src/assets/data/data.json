@@ -358,7 +358,8 @@
       "time": "",
       "important": true
     }
-  ],
+  ]
+  ,
   "celebrities": [
     {
       "firstname": "",
@@ -367,9 +368,28 @@
       "url": ""
     },
     {
+      "firstname": "Thierry",
+      "lastname": "Meyssan",
+      "desc": "géopolitologue, président-fondateur du Réseau Voltaire",
+      "url": "https://www.voltairenet.org/"
+    },
+    {
+      "firstname": "Xavier",
+      "lastname": "Poussard",
+      "desc": "rédacteur en chef de la revue 'Faits & Documents'",
+      "url": "https://faitsetdocuments.com/"
+    },
+    {
+      "firstname": "Éric",
+      "lastname": "Verhaeghe",
+      "desc": "Essayiste, journaliste économique belge",
+      "url": "https://lecourrierdesstrateges.fr/"
+    },
+    {
       "firstname": "Alain",
       "lastname": "de Benoist",
-      "desc": "intellectuel, fondateur de la nouvelle droite et la revue Elément"
+      "desc": "intellectuel, fondateur de la nouvelle droite et la revue 'Elément'",
+      "url": "https://www.alaindebenoist.com/"
     },
     {
       "firstname": "Michel",
