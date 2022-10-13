@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
+import { SortCelebritiesContext } from '../context';
 
 export function useJson(jsonFile) {
     const [data, setData] = useState([]);
@@ -138,3 +139,8 @@ export function useScrollToTop() {
     }, []);
     return { showTopBtn };
 };
+
+export function useSortCelebrities() {
+  const { sortCelebrities, toggleSortCelebrities } = useContext(SortCelebritiesContext);
+  return { sortCelebrities, toggleSortCelebrities };
+}

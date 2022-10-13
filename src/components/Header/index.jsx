@@ -83,7 +83,7 @@ const Header = props => {
   return (
     <>
       <HeaderContainer>
-        <HeaderTitleLink to="/" onClick={() => isSlide(isSlideClass, setIsSlideClass)}>
+        <HeaderTitleLink to="/" onClick={() => setIsSlideClass(false)}>
           <HeaderLogo src={Logo} alt={title}/>
           <HeaderTitles>
             <HeaderTitle>

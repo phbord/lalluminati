@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import GlobalStyle from './assets/styles/GlobalStyle';
+import { SortCelebritiesProvider } from './utils/context';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Loading from './components/Loading'
@@ -15,18 +16,20 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <GlobalStyle/>
-      <Header />
-      <div className='container'>
-        <Suspense fallback={<Loading/>}>
-          <Routes>
-            <Route path='/' element={<Home/>} exact/>
-            <Route path='/celebrities' element={<Celebrities/>}/>
-            <Route path='*' element={<Error/>}/>
-          </Routes>
-        </Suspense>
-        <Footer/>
-      </div>
+      <SortCelebritiesProvider>
+        <GlobalStyle/>
+        <Header />
+        <div className='container'>
+          <Suspense fallback={<Loading/>}>
+            <Routes>
+              <Route path='/' element={<Home/>} exact/>
+              <Route path='/celebrities' element={<Celebrities/>}/>
+              <Route path='*' element={<Error/>}/>
+            </Routes>
+          </Suspense>
+          <Footer/>
+        </div>
+      </SortCelebritiesProvider>
     </Router>
   </React.StrictMode>
 );
