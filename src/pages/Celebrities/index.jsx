@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
 import Data from './../../assets/data/data.json';
 import { useJson, useScrollToTop } from '../../utils/hooks';
@@ -36,7 +36,7 @@ const CelebritiesItem = styled.li`
 const Celebrities = () => {
   const { data } = useJson(Data);
   const { showTopBtn } = useScrollToTop();
-  const { sortCelebrities, toggleSortCelebrities } = useContext(SortCelebritiesContext);
+  const { sortCelebrities } = useContext(SortCelebritiesContext);
 
   const topScrollButtonData = {
     text: "Haut de page",

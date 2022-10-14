@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
-import { SortCelebritiesContext } from '../../utils/context';
+import { SortMediasContext } from '../../utils/context';
 
 const Ul = styled.ul`
   padding: 0;
@@ -35,22 +35,22 @@ const Button = styled.button`
   }
 `;
 
-const SortCelebrities = () => {
-  const { toggleSortCelebrities } = useContext(SortCelebritiesContext);
+const SortMedias = () => {
+  const { toggleSortMedias } = useContext(SortMediasContext);
 
   return (
     <nav>
       <Ul>
         <Li>Tri par</Li>
         <Li>
-          <Button onClick={() => toggleSortCelebrities('firstname')}>prénom</Button>
+          <Button onClick={() => toggleSortMedias('name')}>nom</Button>
         </Li>
         <Li>
-          <Button onClick={() => toggleSortCelebrities('lastname')}>nom</Button>
+          <Button onClick={() => toggleSortMedias('type')}>type de médias</Button>
         </Li>
       </Ul>
     </nav>
   );
 };
 
-export default SortCelebrities;
+export default SortMedias;

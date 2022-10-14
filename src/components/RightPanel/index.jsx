@@ -64,6 +64,11 @@ const RightPanel = (data) => {
             Personnalités
           </LinkPanel>
         </LiPanel>
+        <LiPanel>
+          <LinkPanel to="/medias" onClick={() => _isSlide(data)}>
+            Médias
+          </LinkPanel>
+        </LiPanel>
       </UlPanel>
     </Panel>
   );

@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import GlobalStyle from './assets/styles/GlobalStyle';
-import { SortCelebritiesProvider } from './utils/context';
+import { SortCelebritiesProvider, SortMediasProvider } from './utils/context';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Loading from './components/Loading'
 
 const Home = lazy(() => import('./pages/Home/index'));
 const Celebrities = lazy(() => import('./pages/Celebrities/index'));
+const Medias = lazy(() => import('./pages/Medias/index'));
 const Error = lazy(() => import('./components/Error/index'));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,18 +18,21 @@ root.render(
   <React.StrictMode>
     <Router>
       <SortCelebritiesProvider>
-        <GlobalStyle/>
-        <Header />
-        <div className='container'>
-          <Suspense fallback={<Loading/>}>
-            <Routes>
-              <Route path='/' element={<Home/>} exact/>
-              <Route path='/celebrities' element={<Celebrities/>}/>
-              <Route path='*' element={<Error/>}/>
-            </Routes>
-          </Suspense>
-          <Footer/>
-        </div>
+        <SortMediasProvider>
+          <GlobalStyle/>
+          <Header/>
+          <div className='container'>
+            <Suspense fallback={<Loading/>}>
+              <Routes>
+                <Route path='/' element={<Home/>} exact/>
+                <Route path='/celebrities' element={<Celebrities/>}/>
+                <Route path='/medias' element={<Medias/>}/>
+                <Route path='*' element={<Error/>}/>
+              </Routes>
+            </Suspense>
+            <Footer/>
+          </div>
+        </SortMediasProvider>
       </SortCelebritiesProvider>
     </Router>
   </React.StrictMode>

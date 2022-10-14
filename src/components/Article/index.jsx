@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import noPhoto from './../../assets/images/no-img.jpg';
 import { useMediaCategories, useThemeCategories, useSubstring } from '../../utils/hooks';
 import Photo from './../Photo';
 

@@ -108,6 +108,47 @@ export function useThemeCategories(theme) {
     return { themeType };
 };
 
+export function useMediaTypes(media) {
+    const [mediaType, setMediaType] = useState([]);
+
+    useEffect(() => {
+        if (!media) return;
+        switch (media) {
+            case 'rs':
+                setMediaType('Réseau social');
+                break;
+            case 'b':
+                setMediaType('Blog');
+                break;
+            case 'rv':
+                setMediaType('Revue');
+                break;
+            case 'j':
+                setMediaType('Journal');
+                break;
+            case 'tv':
+                setMediaType('TV');
+                break;
+            case 'ctv':
+                setMediaType('Chaîne TV');
+                break;
+            case 'wtv':
+                setMediaType('Web TV');
+                break;
+            case 'wr':
+                setMediaType('Web radio');
+                break;
+            case 'r':
+                setMediaType('Radio');
+                break;
+            default:
+                setMediaType('');
+                break;
+        }
+    }, [media]);
+    return { mediaType };
+};
+
 export function useSubstring(fullString, number) {
     const [text, setText] = useState('');
 

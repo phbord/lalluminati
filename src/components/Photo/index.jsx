@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import noPhoto from './../../assets/images/no-img.jpg';
 import gp from './../../assets/images/geopolitique-profonde.png';
@@ -32,7 +32,7 @@ function _filterPhoto(photo, mediaName) {
     let photoUrl = '';
     
     if (photo) {
-        photoUrl=photo;
+        photoUrl = photo;
     }
     else {
         switch (mediaName.toLowerCase()) {

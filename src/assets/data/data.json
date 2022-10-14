@@ -576,6 +576,86 @@
       "desc": "économiste",
       "url": "http://leblogdephilippemurer.com/"
     }
-  ],
-  "medias": []
+  ]
+  ,
+  "medias": [
+    {
+      "name": "TVLibertés",
+      "desc": "réinformation",
+      "type": "wtv",
+      "url": "https://www.tvlibertes.com"
+    },
+    {
+      "name": "UPR TV",
+      "desc": "TV de l'Union Populaire Républicaine",
+      "type": "wtv",
+      "url": "https://www.upr.fr/uprtv/"
+    },
+    {
+      "name": "Radio Courtoisie",
+      "desc": "",
+      "type": "r",
+      "url": "https://www.radiocourtoisie.fr/"
+    },
+    {
+      "name": "NTDTV",
+      "desc": "",
+      "type": "tv",
+      "url": "https://ntdtv.fr"
+    },
+    {
+      "name": "Méridien Zéro",
+      "desc": "méta-politique, identité",
+      "type": "wr",
+      "url": "https://radiomz.org/ "
+    },
+    {
+      "name": "Guerre de classe",
+      "desc": "Web radio de Françis Cousin",
+      "type": "wr",
+      "url": "http://guerredeclasse.fr/"
+    },
+    {
+      "name": "Revue Eléments",
+      "desc": "civilisation européenne, méta-politique, société...",
+      "type": "rv",
+      "url": "https://www.revue-elements.com/"
+    },
+    {
+      "name": "Revue d'histoire européenne",
+      "desc": "histoire",
+      "type": "rv",
+      "url": "https://www.facebook.com/people/Revue-dHistoire-Europ%C3%A9enne/100064177236967/"
+    },
+    {
+      "name": "Geab",
+      "desc": "géo-politique et anticipation",
+      "type": "rv",
+      "url": "https://geab.eu/"
+    },
+    {
+      "name": "Nexus",
+      "desc": "santé, aux sciences, géopolitique...",
+      "type": "rv",
+      "url": "https://www.nexus.fr/"
+    },
+    {
+      "name": "",
+      "desc": "",
+      "type": "",
+      "url": ""
+    },
+    {
+      "name": "",
+      "desc": "",
+      "type": "",
+      "url": ""
+    },
+    {
+      "name": "",
+      "desc": "",
+      "type": "",
+      "url": ""
+    }
+  ]
 }
