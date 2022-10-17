@@ -3,13 +3,14 @@ import styled from 'styled-components';
 import { openInNewTab } from '../../utils/functions/index';
 
 const Article = styled.article`
-  margin: var(--articleMargin) 0;
-  padding: var(--articlePadding);
+  width: calc(100% - 2*var(--defaultGutterSizeX));
+  max-width: var(--containerColumnWidth);
+  margin: 0 0 2rem;
+  padding: var(--articlePadding) var(--defaultGutterSizeX);
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: stretch;
-  align-items: stretch;
+  align-items: flex-start;
+  overflow: hidden;
 `;
 
 const H1 = styled.h1`
@@ -28,7 +29,7 @@ const Description = styled.div`
   word-wrap: break-word;
 `;
 
-const CelebrityLink = styled.button`
+const Link = styled.button`
   padding: 0;
   border: 0;
   background-color: transparent;
@@ -37,7 +38,10 @@ const CelebrityLink = styled.button`
   text-decoration: none;
   text-align: left;
   overflow: hidden;
+  overflow-wrap: break-word;
   word-wrap: break-word;
+  word-break: break-all;
+  hyphens: auto;
   cursor: pointer;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
@@ -55,11 +59,19 @@ const Celebrity = (data) => {
 
   return (
     <Article>
-      <H1>{celebrityData.firstname} <Uppercase>{celebrityData.lastname}</Uppercase></H1>
-      <Description>{celebrityData.desc}</Description>
+      <H1>
+        <span>{celebrityData.firstname} </span>
+        <Uppercase>{celebrityData.lastname}</Uppercase>
+      </H1>
+      <Description>
+        {
+          celebrityData?.desc
+          && celebrityData.desc
+        }
+      </Description>
       {
         celebrityData?.url
-        && (<CelebrityLink onClick={() => openInNewTab(celebrityData.url)}>{celebrityData.url}</CelebrityLink>)
+        && (<Link onClick={() => openInNewTab(celebrityData.url)}>{celebrityData.url}</Link>)
       }
     </Article>
   );

@@ -5,18 +5,22 @@ const StyledGlobalStyle = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
 
     :root {
-      --dark: #000;
-      --light: #fff;
-      --articleColor: #C2C2C2;
-      --yellow: #FFFFBA;
+      --dark: #292E27;
+      --light: #FFFCFA;
+      --lightest: #fff;
+      --articleColor: #847E64;
+      --articleHoverColor: #78725B;
+      --yellow: #F2EFEE;
       --yellowStronger: #FFFF00;
       --orangeStronger: #FFBF00;
+      --borderColor: #7C9A7E;
       --defaultGutterSizeX: 1.5rem;
       --defaultGutterSizeY: 1rem;
-      --articleMargin: 1rem;
-      --articleMarginLess: -1rem;
+      --articleMargin: 2rem;
+      --articleMarginLess: -2rem;
       --articlePadding: 1rem;
       --articlePaddingLess: -1rem;
+      --containerColumnWidth: 55rem;
     }
 
     * {
@@ -24,6 +28,7 @@ const StyledGlobalStyle = createGlobalStyle`
     }
 
     html {
+      width: 100%;
       height: 100%;
       font-size: 62.5%;
     }
@@ -33,6 +38,7 @@ const StyledGlobalStyle = createGlobalStyle`
     }
  
     body {
+      width: 100%;
       height: 100%;
       margin: 0;
       display: flex;
@@ -41,7 +47,7 @@ const StyledGlobalStyle = createGlobalStyle`
     }
 
     .container {
-      width: calc(100% - 2*var(--defaultGutterSizeX));
+      width: 100%;
       min-height: 100%;
       display: flex;
       flex-direction: column;
@@ -49,22 +55,46 @@ const StyledGlobalStyle = createGlobalStyle`
 
     .prev-scroll-button,
     .top-scroll-button {
-      background-color: var(--articleColor);
-      color: var(--dark);
+      background-color: transparent;
+      border: 2px solid var(--dark);
+      border-radius: 50%;
 
       &:hover {
-        background-color: var(--yellow);
+        background-color: var(--yellowStronger);
       }
     }
 
     .top-scroll-button {
       position: fixed;
       bottom: 1.25rem;
-      right: .5rem;
+      right: 1.5rem;
     }
 
     .right-panel {
       right: 0!important;
+    }
+
+    .default-article {
+      &:hover {
+        background-color: var(--yellow);
+      }
+
+      button {
+        color: var(--dark);
+      }
+    }
+
+    .important-article {
+      border-bottom: var(--light) solid 1px;
+      background-color: var(--articleColor);
+
+      &:hover {
+        background-color: var(--articleHoverColor);
+      }
+
+      button {
+        color: var(--light);
+      }
     }
 `;
 

@@ -7,8 +7,6 @@ const CustomButton = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0;
-    border-radius: 50%;
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -ms-transition: all 300ms ease;

@@ -9,28 +9,44 @@ import IconButton from '../../components/IconButton';
 import Celebrity from '../../components/Celebrity';
 import SortCelebrities from '../../components/SortCelebrities';
 
-const CelebritiesContainer = styled.div`
-  padding: 7.25rem var(--defaultGutterSizeX) 0;
-  flex-shrink: 0;
+const Container = styled.div`
+    padding: 7.25rem 0 0;
+    flex-shrink: 0;
+`;
+
+const TitleContainer = styled.div`
+  padding: 0 var(--defaultGutterSizeX);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const TitleSubContainer = styled.div`
+  width: 100%;
+  max-width: var(--containerColumnWidth);
 `;
 
 const H1 = styled.h1`
   font-size: 2em;
-  margin: .67em 0;
+  margin: 3rem 0 .67em;
 `;
 
-const CelebritiesList = styled.ul`
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  padding: .5rem;
+const Ul = styled.ul`
+  padding: var(--articleMargin) 0 0;
 `;
 
-const CelebritiesItem = styled.li`
+const Li = styled.li`
   list-style: none;
-  margin: 0;
   padding-top: 0;
   padding-bottom: 0;
-  border-bottom: var(--dark) solid 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid var(--yellow);
+
+  &:first-child {
+    border-top: 1px solid var(--yellow);
+  }
 `;
 
 const Celebrities = () => {
@@ -46,24 +62,28 @@ const Celebrities = () => {
   };
   
   return (
-    <CelebritiesContainer>
-      <H1>Personnalités</H1>
-      <SortCelebrities/>
-      <CelebritiesList className='row'>
+    <Container>
+      <TitleContainer>
+        <TitleSubContainer>
+          <H1>Personnalités</H1>
+          <SortCelebrities/>
+        </TitleSubContainer>
+      </TitleContainer>
+      <Ul>
         {
           data?.celebrities?.filter(celebrity => (celebrity.firstname && celebrity.lastname))
             .sort((a, b) => sortCelebrities === 'firstname' ? a.firstname.localeCompare(b.firstname) : a.lastname.localeCompare(b.lastname))
             .map((celebrity, index) => (
-              <CelebritiesItem key={index} className='col-xs-12 col-sm-6 col-md-3 col-lg-2'>
+              <Li key={index}>
                 <Celebrity data={celebrity}/>
-              </CelebritiesItem>
+              </Li>
             ))
         }
-      </CelebritiesList>
+      </Ul>
       {
         showTopBtn && (<IconButton data={topScrollButtonData}/>)
       }
-    </CelebritiesContainer>
+    </Container>
   );
 };
 

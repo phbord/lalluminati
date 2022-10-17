@@ -8,46 +8,40 @@ import TopArrowIcon from './../../assets/images/top-arrow.svg';
 import Article from '../../components/Article';
 import IconButton from '../../components/IconButton';
 
-const ArticleContainer = styled.div`
-    padding: 7.25rem var(--defaultGutterSizeX) 0;
+const Container = styled.div`
+    padding: 7.25rem 0 0;
     flex-shrink: 0;
 `;
 
-const ArticleList = styled.ul`
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    padding: .5rem;
+const Ul = styled.ul`
+  padding: var(--articleMargin) 0 0;
 `;
 
-const ArticleItem = styled.li`
+const Li = styled.li`
     list-style: none;
-    margin: 0;
     padding-top: 0;
     padding-bottom: 0;
 `;
 
-const ArticleLink = styled.button`
+const Link = styled.button`
+    width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0 var(--defaultGutterSizeX);
     display: flex;
-    align-items: stretch;
+    flex-direction: column;
+    align-items: center;
     border: 0;
     background-color: transparent;
-    color: var(--dark);
     text-decoration: none;
     cursor: pointer;
 
     &:hover {
-      article {
-        border: var(--yellow) solid 1px;
-        background-color: var(--yellow);
-        -webkit-transition: all 300ms ease;
-        -moz-transition: all 300ms ease;
-        -ms-transition: all 300ms ease;
-        -o-transition: all 300ms ease;
-        transition: all 300ms ease;
-      }
+      -webkit-transition: all 300ms ease;
+      -moz-transition: all 300ms ease;
+      -ms-transition: all 300ms ease;
+      -o-transition: all 300ms ease;
+      transition: all 300ms ease;
 
       .article-photo {
         opacity: .75;
@@ -72,26 +66,25 @@ const Home = () => {
   };
 
   return (
-    <ArticleContainer className="App">
-      <ArticleList className='row'>
+    <Container>
+      <Ul>
         {
           data?.articles?.filter(article => (article.title && article.link))
             .map((article, index) => (
-              <ArticleItem key={index}
-                           className='col-xs-12 col-sm-6 col-md-3'>
-                <ArticleLink onClick={() => openInNewTab(article.link)}>
+              <Li key={index} className={article.important ? 'important-article' : 'default-article'}>
+                <Link onClick={() => openInNewTab(article.link)}>
                   <Article data={article}
                            key={index}/>
-                </ArticleLink>
-              </ArticleItem>
+                </Link>
+              </Li>
             )
           )
         }
-      </ArticleList>
+      </Ul>
       {
         showTopBtn && (<IconButton data={topScrollButtonData}/>)
       }
-    </ArticleContainer>
+    </Container>
   );
 };
 

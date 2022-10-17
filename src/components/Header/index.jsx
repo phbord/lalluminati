@@ -52,7 +52,7 @@ const HeaderSubTitle = styled.h2`
 
 const HeaderLogo = styled.img`
   height: 4.5rem;
-  margin-right: .75rem;
+  margin-right: var(--defaultGutterSizeX);
   padding: .125rem;
   display: block;
   border-radius: 50%;

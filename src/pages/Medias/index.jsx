@@ -9,27 +9,44 @@ import IconButton from '../../components/IconButton';
 import Media from '../../components/Media';
 import SortMedias from '../../components/SortMedias';
 
-const MediasContainer = styled.div`
-  padding: 7.25rem var(--defaultGutterSizeX) 0;
+const Container = styled.div`
+  padding: 7.25rem 0 0;
   flex-shrink: 0;
+`;
+
+const TitleContainer = styled.div`
+  padding: 0 var(--defaultGutterSizeX);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const TitleSubContainer = styled.div`
+  width: 100%;
+  max-width: var(--containerColumnWidth);
 `;
 
 const H1 = styled.h1`
   font-size: 2em;
-  margin: .67em 0;
+  margin: 3rem 0 .67em;
 `;
 
-const MediasList = styled.ul`
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    padding: .5rem;
+const Ul = styled.ul`
+  padding: var(--articleMargin) 0 0;
 `;
 
-const MediasItem = styled.li`
+const Li = styled.li`
   list-style: none;
-  margin: 0;
   padding-top: 0;
   padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid var(--yellow);
+
+  &:first-child {
+    border-top: 1px solid var(--yellow);
+  }
 `;
 
 const Medias = () => {
@@ -45,24 +62,28 @@ const Medias = () => {
   };
 
   return (
-    <MediasContainer>
-      <H1>Médias</H1>
-      <SortMedias/>
-      <MediasList className='row'>
+    <Container>
+      <TitleContainer>
+        <TitleSubContainer>
+          <H1>Médias</H1>
+          <SortMedias/>
+        </TitleSubContainer>
+      </TitleContainer>
+      <Ul>
         {
           data?.medias?.filter(media => (media.name && media.type))
             .sort((a, b) => sortMedias === 'type' ? a.type.localeCompare(b.type) : a.name.localeCompare(b.name))
             .map((media, index) => (
-              <MediasItem key={index} className='col-xs-12 col-sm-6 col-md-3'>
+              <Li key={index}>
                 <Media data={media}/>
-              </MediasItem>
+              </Li>
             ))
         }
-      </MediasList>
+      </Ul>
       {
         showTopBtn && (<IconButton data={topScrollButtonData}/>)
       }
-    </MediasContainer>
+    </Container>
   );
 };
 

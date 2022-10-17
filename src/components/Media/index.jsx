@@ -1,50 +1,50 @@
 import React from 'react';
 import styled from 'styled-components';
 import { openInNewTab } from '../../utils/functions/index';
-import { useMediaTypes } from '../../utils/hooks';
+import Logo from '../logo';
 
 const Article = styled.article`
-  height: calc(100% - var(--articleMargin)*2 - var(--articlePadding)*2);
-  margin: var(--articleMargin);
-  padding: var(--articlePadding);
+  width: calc(100% - 2*var(--defaultGutterSizeX));
+  max-width: var(--containerColumnWidth);
+  margin: 0 0 2rem;
+  padding: var(--articlePadding) var(--defaultGutterSizeX);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  overflow: hidden;
+
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+`;
+
+const Content = styled.div`
+  margin-left: var(--defaultGutterSizeX);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border: var(--articleColor) solid 1px;
-  border-radius: .5rem;
-`;
+  overflow: hidden;
 
-const Type = styled.div`
-  margin: 0 .5rem .5rem 0;
-  padding: .25rem .5rem;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: var(--yellowStronger);
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: .125rem;
+  @media screen and (max-width: 550px) {
+    margin-left: 0;
+  }
 `;
 
 const H1 = styled.h1`
-  text-align: left;
+  margin: 0 0 .25rem;
+  font-size: 1.35rem;
+  font-weight: bold;
 `;
 
 const Description = styled.div`
   font-size: 1.35rem;
-  text-align: left;
+  overflow: hidden;
+  word-wrap: break-word;
 `;
 
-const OtherInfos = styled.div`
-  margin-top: .75rem;
-  text-align: left;
-`;
-
-const OtherSubInfos = styled.span`
-  font-size: 1.5rem;
-`;
-
-const MediaLink = styled.button`
-  padding: .25rem 0 0;
+const Link = styled.button`
+  padding: 0;
   border: 0;
   background-color: transparent;
   color: var(--dark);
@@ -52,7 +52,10 @@ const MediaLink = styled.button`
   text-decoration: none;
   text-align: left;
   overflow: hidden;
+  overflow-wrap: break-word;
   word-wrap: break-word;
+  word-break: break-all;
+  hyphens: auto;
   cursor: pointer;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
@@ -67,19 +70,21 @@ const MediaLink = styled.button`
 
 const Media = (data) => {
   const MediaData = data.data;
-  const { mediaType } = useMediaTypes(MediaData.type);
 
   return (
     <Article>
-      <Type>{mediaType}</Type>
-      <H1>{MediaData.name}</H1>
-      {
-        MediaData.desc && <Description>{MediaData.desc}</Description>
-      }
-      {
-        MediaData?.url
-        && (<MediaLink onClick={() => openInNewTab(MediaData.url)}>{MediaData.url}</MediaLink>)
-      }
+      <Logo data={MediaData}/>
+      <Content>
+        <H1>{MediaData.name}</H1>
+        {
+          MediaData?.desc
+          && <Description>{MediaData.desc}</Description>
+        }
+        {
+          MediaData?.url
+          && (<Link onClick={() => openInNewTab(MediaData.url)}>{MediaData.url}</Link>)
+        }
+      </Content>
     </Article>
   );
 };

@@ -17,7 +17,7 @@ const Li = styled.li`
 const Button = styled.button`
   padding: .25rem .5rem;
   border: 0;
-  background-color: var(--articleColor);
+  background-color: var(--yellowStronger);
   font-weight: 700;
   -webkit-letter-spacing: .125rem;
   -moz-letter-spacing: .125rem;
@@ -31,7 +31,7 @@ const Button = styled.button`
   transition: all 300ms ease;
 
   &:hover {
-    background-color: var(--yellowStronger);
+    background-color: var(--orangeStronger);
   }
 `;
 

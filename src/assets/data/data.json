@@ -583,79 +583,92 @@
       "name": "TVLibertés",
       "desc": "réinformation",
       "type": "wtv",
-      "url": "https://www.tvlibertes.com"
+      "url": "https://www.tvlibertes.com",
+      "photo": "https://upload.wikimedia.org/wikipedia/fr/2/2f/TV_Libert%C3%A9s_logo.png"
     },
     {
       "name": "UPR TV",
       "desc": "TV de l'Union Populaire Républicaine",
       "type": "wtv",
-      "url": "https://www.upr.fr/uprtv/"
+      "url": "https://www.upr.fr/uprtv/",
+      "photo": "https://yt3.ggpht.com/ytc/AMLnZu-3XKZ5Wh5IjZIWJ7yelUfYFQPEuic2iQBflaYTcg=s900-c-k-c0x00ffffff-no-rj"
     },
     {
       "name": "Radio Courtoisie",
       "desc": "",
       "type": "r",
-      "url": "https://www.radiocourtoisie.fr/"
+      "url": "https://www.radiocourtoisie.fr/",
+      "photo": "https://upload.wikimedia.org/wikipedia/fr/3/32/Logo_radio_courtoisie.jpg"
     },
     {
       "name": "NTDTV",
       "desc": "",
       "type": "tv",
-      "url": "https://ntdtv.fr"
+      "url": "https://ntdtv.fr",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/NTD_Logo_with_symbol.svg/1920px-NTD_Logo_with_symbol.svg.png?20211113150733"
     },
     {
       "name": "Méridien Zéro",
       "desc": "méta-politique, identité",
       "type": "wr",
-      "url": "https://radiomz.org/ "
+      "url": "https://radiomz.org/ ",
+      "photo": "https://i1.sndcdn.com/avatars-IzCtF2LbjKwbf9lS-LftVZA-t240x240.jpg"
     },
     {
       "name": "Guerre de classe",
       "desc": "Web radio de Françis Cousin",
       "type": "wr",
-      "url": "http://guerredeclasse.fr/"
+      "url": "http://guerredeclasse.fr/",
+      "photo": "http://guerredeclasse.fr/wp-content/uploads/2019/04/cropped-cropped-Logo-site-1.png"
     },
     {
       "name": "Revue Eléments",
       "desc": "civilisation européenne, méta-politique, société...",
       "type": "rv",
-      "url": "https://www.revue-elements.com/"
+      "url": "https://www.revue-elements.com/",
+      "photo": "https://www.ojim.fr/wp-content/uploads/2021/03/revue-elements.jpg"
     },
     {
       "name": "Revue d'histoire européenne",
       "desc": "histoire",
       "type": "rv",
-      "url": "https://www.facebook.com/people/Revue-dHistoire-Europ%C3%A9enne/100064177236967/"
+      "url": "https://www.facebook.com/people/Revue-dHistoire-Europ%C3%A9enne/100064177236967/",
+      "photo": "https://www.librairie-hussard.fr/assets/images/cat_100322_logo-RHE.png"
     },
     {
       "name": "Geab",
       "desc": "géo-politique et anticipation",
       "type": "rv",
-      "url": "https://geab.eu/"
+      "url": "https://geab.eu/",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg1Y_VnFOy6UA3KAdxx9CZDk-O2ATdjjxu3TbKpx-jEA&s"
     },
     {
       "name": "Nexus",
       "desc": "santé, aux sciences, géopolitique...",
       "type": "rv",
-      "url": "https://www.nexus.fr/"
+      "url": "https://www.nexus.fr/",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/a/af/Nexus_France_Magazine_Logo.png"
+    },
+    {
+      "name": "Géopolitique Profonde",
+      "desc": "géo-politique",
+      "type": "ctv",
+      "url": "https://www.youtube.com/channel/UCwAS7bowP5S5P44eP_f7W0Q",
+      "photo": "https://media-exp1.licdn.com/dms/image/C4D0BAQExJFOiMuwnnA/company-logo_200_200/0/1602774789725?e=2147483647&v=beta&t=kv4lDy26s67giXsFiWPxW5Wv1DK2UWhmRbkX2HdK9X8"
+    },
+    {
+      "name": "Ligne Droite",
+      "desc": "La matinale de Radio Courtoisie",
+      "type": "ctv",
+      "url": "https://www.youtube.com/c/LigneDroiteMatinale/videos",
+      "photo": "https://yt3.ggpht.com/dNXlVdRl9F3zdRalVIB2VAdomyndTLOH5u0jE_iwqzQYC7ZuZ8JaJozuo3OXFkMJrwYCNfLU=s900-c-k-c0x00ffffff-no-rj"
     },
     {
       "name": "",
       "desc": "",
       "type": "",
-      "url": ""
-    },
-    {
-      "name": "",
-      "desc": "",
-      "type": "",
-      "url": ""
-    },
-    {
-      "name": "",
-      "desc": "",
-      "type": "",
-      "url": ""
+      "url": "",
+      "photo": ""
     }
   ]
 }

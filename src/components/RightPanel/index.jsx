@@ -12,7 +12,7 @@ const Panel = styled.nav`
   width: 100%;
   max-width: 33rem;
   padding-top: 7.25rem;
-  background-color: var(--articleColor);
+  background-color: var(--yellowStronger);
   -webkit-box-shadow: -5px 0 5px 0 rgba(0,0,0,.125);
   box-shadow: -5px 0 5px 0 rgba(0,0,0,.125);
   -webkit-transition: all 300ms ease;
@@ -23,7 +23,8 @@ const Panel = styled.nav`
 `;
 
 const UlPanel = styled.ul`
-  padding-left: 0;
+  margin: 2rem 0;
+  padding: 0;
 `;
 
 const LiPanel = styled.li`
@@ -32,10 +33,10 @@ const LiPanel = styled.li`
 `;
 
 const LinkPanel = styled(Link)`
-  padding: var(--articlePadding);
+  padding: var(--articlePadding) var(--articleMargin);
   display: block;
   color: var(--dark);
-  font-size: 1.25rem;
+  font-size: 2em;
   font-weight: 700;
   letter-spacing: .125rem;
   text-decoration: none;
