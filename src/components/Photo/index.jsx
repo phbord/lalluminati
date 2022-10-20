@@ -13,6 +13,7 @@ import ntdtv from './../../assets/images/ntdtv.jpg';
 import meridienZero from './../../assets/images/meridien-zero.jpeg';
 import ri from './../../assets/images/ri.png';
 import klaTv from './../../assets/images/klatv.jpeg';
+import revuescitoyennes from './../../assets/images/revuescitoyennes.png';
 
 const Ul = styled.ul`
     position: absolute;
@@ -108,6 +109,9 @@ function _filterPhoto(photo, mediaName) {
                 break;
             case 'Kla.tv'.toLowerCase():
                 photoUrl = klaTv;
+                break;
+            case 'REVUES CITOYENNES'.toLowerCase():
+                photoUrl = revuescitoyennes;
                 break;
             default:
                 photoUrl = noPhoto;
