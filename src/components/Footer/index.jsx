@@ -4,9 +4,8 @@ import RussiaFlagUrl from '../../assets/images/russia.png';
 
 const FooterContainer = styled.footer`
     margin-top: auto;
-    padding: 2rem .75rem;
+    padding: 2rem .75rem 2rem calc(var(--itemPaddingLeft) + var(--defaultGutterSizeX));
     display: flex;
-    justify-content: center;
     align-items: center;
 `;
 

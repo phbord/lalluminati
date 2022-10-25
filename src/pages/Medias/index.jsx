@@ -9,16 +9,15 @@ import IconButton from '../../components/IconButton';
 import Media from '../../components/Media';
 import SortMedias from '../../components/SortMedias';
 
-const Container = styled.div`
+const Container = styled.section`
   padding: 7.25rem 0 0;
   flex-shrink: 0;
 `;
 
 const TitleContainer = styled.div`
-  padding: 0 var(--defaultGutterSizeX);
+  padding: 0 var(--defaultGutterSizeX) 0 calc(var(--itemPaddingLeft) + var(--defaultGutterSizeX));
   display: flex;
   flex-direction: column;
-  align-items: center;
 `;
 
 const TitleSubContainer = styled.div`
@@ -37,11 +36,9 @@ const Ul = styled.ul`
 
 const Li = styled.li`
   list-style: none;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0 0 0 var(--itemPaddingLeft);
   display: flex;
   flex-direction: column;
-  align-items: center;
   border-bottom: 1px solid var(--yellow);
 
   &:first-child {

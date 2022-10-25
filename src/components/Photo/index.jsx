@@ -45,6 +45,7 @@ const Photo = (data) => {
         width: 100%;
         height: 12.5rem;
         margin: var(--articlePaddingLess) 0 var(--articlePadding);
+        border: var(--dark) solid 1px;
         background: transparent url(${_filterPhoto(data.data.photo, data.data.media_name)}) no-repeat center;
         background-size: cover;
     `;

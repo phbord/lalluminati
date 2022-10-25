@@ -8,7 +8,7 @@ import TopArrowIcon from './../../assets/images/top-arrow.svg';
 import Article from '../../components/Article';
 import IconButton from '../../components/IconButton';
 
-const Container = styled.div`
+const Container = styled.section`
     padding: 7.25rem 0 0;
     flex-shrink: 0;
 `;
@@ -19,8 +19,7 @@ const Ul = styled.ul`
 
 const Li = styled.li`
     list-style: none;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0 0 0 var(--itemPaddingLeft);
 `;
 
 const Link = styled.button`
@@ -30,7 +29,6 @@ const Link = styled.button`
     padding: 0 var(--defaultGutterSizeX);
     display: flex;
     flex-direction: column;
-    align-items: center;
     border: 0;
     background-color: transparent;
     text-decoration: none;

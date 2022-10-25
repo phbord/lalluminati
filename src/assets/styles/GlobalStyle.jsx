@@ -21,6 +21,8 @@ const StyledGlobalStyle = createGlobalStyle`
       --articlePadding: 1rem;
       --articlePaddingLess: -1rem;
       --containerColumnWidth: 55rem;
+      --iconSize: 4.5rem;
+      --itemPaddingLeft: calc(var(--iconSize) + var(--defaultGutterSizeX) + .125rem);
     }
 
     * {
@@ -44,13 +46,6 @@ const StyledGlobalStyle = createGlobalStyle`
       display: flex;
       flex-direction: column;
       background-color: var(--light);
-    }
-
-    .container {
-      width: 100%;
-      min-height: 100%;
-      display: flex;
-      flex-direction: column;
     }
 
     .prev-scroll-button,
