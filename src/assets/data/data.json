@@ -11,7 +11,34 @@
       "media_type": "",
       "media_name": "",
       "date": "",
-      "time": ""
+      "time": "",
+      "important": true
+    },
+    {
+      "title": "Politique & Eco n°360 avec Georges Clément - Biden : marionnette de l’Etat profond américain",
+      "chapo": "Biden handicape le camp démocrate",
+      "desc": "",
+      "author": "",
+      "link": "https://tvl.fr/politique-eco-n0360-avec-georges-clement-biden-marionnette-de-l-etat-profond-americain",
+      "photo": "https://tvl.fr/upload/media/program/0001/21/thumb_20709_program_poster.jpg",
+      "theme_category": "eco",
+      "media_type": "v",
+      "media_name": "TVL",
+      "date": "17/10/2022",
+      "time": "59:07"
+    },
+    {
+      "title": "Politique & Eco n°358 avec Olivier Piacentini - Quand la Chine rachètera l'Europe",
+      "chapo": "",
+      "desc": "Comment et pourquoi l’Occident se fourvoie aujourd’hui ? Civilisation d’exception, il a commencé à avoir peur de lui-même en 1945,",
+      "author": "",
+      "link": "https://tvl.fr/politique-eco-n0358-avec-olivier-piacentini-quand-la-chine-rachetera-l-europe",
+      "photo": "https://tvl.fr/upload/media/program/0001/21/thumb_20491_program_slider.jpg",
+      "theme_category": "eco",
+      "media_type": "v",
+      "media_name": "TVL",
+      "date": "03/10/2022",
+      "time": "54:15"
     },
     {
       "title": "REVUE CITOYENNE N° 12 : Les Fondements de l’Empire Rothschild",
@@ -24,7 +51,8 @@
       "media_type": "a",
       "media_name": "REVUES CITOYENNES",
       "date": "",
-      "time": "38:50"
+      "time": "38:50",
+      "important": true
     },
     {
       "title": "REVUE CITOYENNE N° 7 : Qui sont les Véritables Maitres du Monde",
@@ -37,7 +65,8 @@
       "media_type": "a",
       "media_name": "REVUES CITOYENNES",
       "date": "08/11/2011",
-      "time": "31:27"
+      "time": "31:27",
+      "important": true
     },
     {
       "title": "L'ECHIQUIER MONDIAL. Amérique du sud, le continent non aligné",
