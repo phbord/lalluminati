@@ -80,11 +80,12 @@ const StyledGlobalStyle = createGlobalStyle`
     }
 
     .important-article {
-      border-bottom: var(--light) solid 1px;
-      background-color: var(--articleColor);
+      opacity: .8;
+      background-color: var(--dark);
+      background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--dark) 1rem ), repeating-linear-gradient( #E98D3F55, var(--articleColor) );
 
       &:hover {
-        background-color: var(--articleHoverColor);
+        background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--dark) 1rem ), repeating-linear-gradient( #E98D3F55, var(--yellowStronger) );
       }
 
       button {
