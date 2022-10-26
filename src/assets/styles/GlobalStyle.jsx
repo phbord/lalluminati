@@ -5,12 +5,12 @@ const StyledGlobalStyle = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
 
     :root {
-      --dark: #292E27;
-      --light: #FFFCFA;
+      --dark: #28223B;
+      --light: #F6F9F8;
       --lightest: #fff;
-      --articleColor: #847E64;
-      --articleHoverColor: #78725B;
-      --yellow: #F2EFEE;
+      --articleColor: #E98D3F;
+      --articleHoverColor: #FF9B46;
+      --yellow: #EDF0EF;
       --yellowStronger: #FFFF00;
       --orangeStronger: #FFBF00;
       --borderColor: #7C9A7E;

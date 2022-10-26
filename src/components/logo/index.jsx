@@ -37,7 +37,7 @@ const Logo = (data) => {
     max-width: 17.5rem;
     height: 9rem;
     margin-bottom: var(--defaultGutterSizeY);
-    border: 1px solid var(--articleColor);
+    border: 1px solid var(--dark);
     border-radius: .25rem;
     background: transparent url(${MediaData.photo}) center no-repeat;
     background-size: cover;
