@@ -14,6 +14,7 @@ import meridienZero from './../../assets/images/meridien-zero.jpeg';
 import ri from './../../assets/images/ri.png';
 import klaTv from './../../assets/images/klatv.jpeg';
 import revuescitoyennes from './../../assets/images/revuescitoyennes.png';
+import stratpol from './../../assets/images/stratpol.jpeg';
 
 const Ul = styled.ul`
     position: absolute;
@@ -113,6 +114,9 @@ function _filterPhoto(photo, mediaName) {
                 break;
             case 'REVUES CITOYENNES'.toLowerCase():
                 photoUrl = revuescitoyennes;
+                break;
+            case 'Stratpol'.toLowerCase():
+                photoUrl = stratpol;
                 break;
             default:
                 photoUrl = noPhoto;
