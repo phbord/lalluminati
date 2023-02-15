@@ -68,8 +68,6 @@ const Home = () => {
   for (let i = 1; i < 6; i++) {
     produit = produit+i;
     //somme = somme+produit;
-    console.log('>>>>>> i:',i, 'somme:', somme, ' / produit:',produit);
-    console.log(somme+produit);
   }
 
   return (
