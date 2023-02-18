@@ -15,6 +15,7 @@ const Container = styled.article`
 
 const H1 = styled.h1`
     text-align: left;
+    font-size: 3rem;
 `;
 
 const H2 = styled.h2`

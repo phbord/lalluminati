@@ -20,7 +20,7 @@ const StyledGlobalStyle = createGlobalStyle`
       --articleMarginLess: -2rem;
       --articlePadding: 1rem;
       --articlePaddingLess: -1rem;
-      --containerColumnWidth: 55rem;
+      --containerColumnWidth: 80rem;
       --iconSize: 4.5rem;
       --itemPaddingLeft: calc(var(--iconSize) + var(--defaultGutterSizeX) + .125rem);
     }

@@ -19,7 +19,6 @@ const Ul = styled.ul`
 
 const Li = styled.li`
     list-style: none;
-    padding: 0 0 0 var(--itemPaddingLeft);
 `;
 
 const Link = styled.button`
@@ -29,6 +28,7 @@ const Link = styled.button`
     padding: 0 var(--defaultGutterSizeX);
     display: flex;
     flex-direction: column;
+    align-items: center;
     border: 0;
     background-color: transparent;
     text-decoration: none;
