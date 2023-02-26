@@ -23,7 +23,7 @@ const H2 = styled.h2`
 `;
 
 const Description = styled.div`
-    font-size: 1.35rem;
+    font-size: 1.85rem;
     text-align: left;
 `;
 
@@ -33,7 +33,7 @@ const OtherInfos = styled.div`
 `;
 
 const OtherSubInfos = styled.span`
-    font-size: 1.5rem;
+    font-size: 1.85rem;
 `;
 
 const Article = (data) => {

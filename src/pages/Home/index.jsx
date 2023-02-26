@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Data from './../../assets/data/data.json';
 import { useJson, useScrollToTop } from '../../utils/hooks';
@@ -7,6 +7,7 @@ import { goToTop } from "../../utils/functions";
 import TopArrowIcon from './../../assets/images/top-arrow.svg';
 import Article from '../../components/Article';
 import IconButton from '../../components/IconButton';
+import Pagination from '../../components/Pagination';
 
 const Container = styled.section`
     padding: 7.25rem 0 0;
@@ -53,8 +54,17 @@ const Link = styled.button`
 `;
 
 const Home = () => {
-  const { data } = useJson(Data);
   const { showTopBtn } = useScrollToTop();
+  const { data } = useJson(Data);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [recordsPerPage] = useState(10);
+  const indexOfLastRecord = currentPage * recordsPerPage;
+  const indexOfFirstRecord = indexOfLastRecord - recordsPerPage;
+  const currentRecords = data?.articles?.filter(article => (article.title && article.link)).slice(indexOfFirstRecord, indexOfLastRecord);
+  const nPages = Math.ceil(data?.articles?.filter(article => (article.title && article.link)).length / recordsPerPage)
+  console.log(typeof data.articles, '//', data?.articles);
+  console.log(typeof currentRecords, '/// currentRecords:', currentRecords);
+  console.log('---> nPages:', nPages);
 
   const topScrollButtonData = {
     text: "Haut de page",
@@ -64,28 +74,30 @@ const Home = () => {
   };
 
   let produit = 1;
-  let somme = 0;
+  let sum = 0;
   for (let i = 1; i < 6; i++) {
     produit = produit+i;
-    //somme = somme+produit;
   }
 
   return (
     <Container>
       <Ul>
         {
-          data?.articles?.filter(article => (article.title && article.link))
-            .map((article, index) => (
-              <Li key={index} className={article.important ? 'important-article' : 'default-article'}>
-                <Link onClick={() => openInNewTab(article.link)}>
-                  <Article data={article}
-                           key={index}/>
-                </Link>
-              </Li>
-            )
-          )
+          currentRecords?.map((article, index) => (
+            <Li key={index} className={article.important ? 'important-article' : 'default-article'}>
+              <Link onClick={() => openInNewTab(article.link)}>
+                <Article data={article}
+                          key={index}/>
+              </Link>
+            </Li>
+          ))
         }
       </Ul>
+      {
+        nPages > 1 && <Pagination nPages={nPages} 
+                                  currentPage={currentPage} 
+                                  setCurrentPage={setCurrentPage} />
+      }
       {
         showTopBtn && (<IconButton data={topScrollButtonData}/>)
       }
